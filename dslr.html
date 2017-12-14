@@ -1,0 +1,109 @@
+<html lang="en"
+      class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"
+      slick-uniqueid="3"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>CameraSim</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+	      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" media="all" href="http://camerasim.com/embed/assets/css/style.css">
+	<base target="_parent">
+	<script async="" src="//www.google-analytics.com/analytics.js"></script>
+	<script src="http://camerasim.com/embed/assets/js/libs/modernizr-2.0.6.min.js"></script>
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<script src="http://camerasim.com/embed/assets/js/swfobject.js?ver=2.2"></script>
+	<script>
+		swfobject.registerObject("camerasim", "10.0.0", "http://camerasim.com/embed/assets/flash/expressInstall.swf");
+	</script>
+	<style type="text/css" media="screen">#camerasim {
+		visibility: hidden
+	}</style>
+
+	<!-- refresh to get flash to resize on window resize -->
+	<script type="text/javascript">
+		var currheight  = document.documentElement.clientHeight;
+		window.onresize = function () {
+			if (currheight != document.documentElement.clientHeight) {
+				location.replace(location.href);
+			}
+		}
+	</script>
+
+</head>
+<!-- <div class="text-center embed-header">
+    <h1>The Original CameraSim </h1>
+</div> -->
+<body class="row" id="embed">
+
+<div id="main" class="col-sm-7 resize" role="main">
+	<object id="camerasim_embed" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="720" height="720"
+	        style="width: 720px; height: 720px;">
+
+		<!--[if !IE]>-->
+		<object id="camerasim_embed_noie" type="application/x-shockwave-flash"
+		        data="http://camerasim.com/embed/assets/flash/camerasim-web.swf" width="720" height="720"
+		        style="width: 720px; height: 720px;">
+			<!--<![endif]-->
+			<param name="movie" value="http://camerasim.com/embed/assets/flash/camerasim-web.swf">
+			<param name="FlashVars"
+			       value="swfURL=http://camerasim.com/embed/assets/flash/cs_secure.swf&amp;photo_warnings=2&amp;photo_warning_frequency=5&amp;cta_url=http://camerasim.com/apps/?utm_source=widget&amp;utm_medium=limitscreen&amp;langPath=http://camerasim.com/embed/assets/lang/&amp;_ga=GA1.2.1900489142.1513187623&amp;_gid=GA1.2.2048579420.1513187623&amp;_gat=1&amp;lang=en">
+
+			<param name="bgcolor" value="404447#">
+
+			<link rel="stylesheet" href="/css/main-styles.css" type="text/css">
+
+			<div class="no-flash">
+				<div class="row">
+					<h1>Flash is needed to use the CameraSim web simulator.</h1>
+
+					<p><strong>Please update or install the
+						<a href="http://www.adobe.com/go/getflashplayer">free Flash plugin</a>.</strong> It only takes a few
+						seconds.</p> <br>
+
+					<div class="col-sm-6 col-sm-offset-3 noflash-cta">
+						<p>Don't want to update flash? <strong>Watch a video about what CameraSim can do instead. </strong></p>
+						<a class="btn btn-danger btn-lg" href="http://camerasim.com/apps/original-camerasim/"> Watch Now </a>
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<!-- <img src="/img/camsim2-header-lg.jpg" /> -->
+					<p class="on-mobile">(If you're on a mobile device, check out the
+						<a class="on-mobile" href="/apps/?r=no-flash">other versions of CameraSim</a>.)</p>
+				</div>
+
+
+				<!-- <p>Otherwise, please update or install the free <a href="http://www.adobe.com/go/getflashplayer">Flash plugin</a>.</p> -->
+				<!-- <p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" /></a></p> -->
+			</div>
+			<!--[if !IE]>-->
+		</object>
+		<!--<![endif]-->
+	</object>
+
+</div>
+
+
+<script src="//ajax.googleapis.com/ajax/libs/mootools/1.4.1/mootools-yui-compressed.js"></script>
+<script src="http://camerasim.com/embed/assets/js/libs/slider/slider.js"></script>
+<script src="http://camerasim.com/embed/assets/js/libs/mediabox/mediaboxAdv.js"></script>
+<script src="http://camerasim.com/embed/assets/js/script.js"></script>
+
+
+
+<div id="mbOverlay" style="display: none; opacity: 0;"></div>
+<div id="mbCenter" style="display: none;">
+	<div id="mbContainer">
+		<div id="mbMedia"></div>
+	</div>
+	<div id="mbBottom" style="opacity: 0;"><a id="mbCloseLink" href="#"></a><a id="mbNextLink" href="#"></a><a
+					id="mbPrevLink" href="#"></a>
+		<div id="mbTitle"></div>
+		<div id="mbNumber"></div>
+		<div id="mbCaption"></div>
+	</div>
+</div>
+</body>
+</html>
