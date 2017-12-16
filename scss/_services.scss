@@ -5,7 +5,7 @@
 }
 
 #services {
-  padding: 0 0 0px 0;
+  background: #333;
 }
 
 
@@ -109,11 +109,10 @@
 
 .text {
   color: #8b6a60;
-  font-family: 'Lato', sans-serif;
-  font-weight: 300;
-  font-style:italic;
+  font-family: sans-serif;
   text-align: center;
-  h1 {
-    font-size: 1.4em;
-  }
+  text-transform: uppercase;
+  font-size: 27px;
+  font-weight: bold;
+  margin-top: 26px;
 }

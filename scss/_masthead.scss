@@ -2,9 +2,9 @@
 header.masthead {
   text-align: center;
   color: #fed136;
-  background-image: url('../img/dk/1.jpg');
+  background-image: url('../img/hero.jpg');
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-position: center center;
   position: relative;
   @include background-cover;
@@ -13,6 +13,7 @@ header.masthead {
     padding-bottom: 100px;
     position: relative;
     z-index:2;
+    color: transparent;
 
     .intro-lead-in {
       font-size: 22px;
@@ -35,7 +36,7 @@ header.masthead {
     left: 0;
     right: 0;
     bottom: 0;
-    opacity: .5;
+    opacity: .2;
     background: black;
     z-index:1;
   }

@@ -1,13 +1,19 @@
+#wishes {
+	padding-bottom: 10px !important;
+	padding-top: 0;
+}
+
 .wish {
+
 	text-align: center;
 	margin: 0;
-	padding: 25px;
+	padding: 25px 25px;
 	@include serif-font;
 	text-transform: uppercase;
-	font-size: 40px;
-	font-weight: bold;
-	color: #5a6b65;
-	background-color: #FFE5D9;
+	font-size: 24px;
+	font-weight: 700;
+	color: #019bdd;
+	background-color: #fff;
 }
 
 .wish-container {
@@ -17,9 +23,9 @@
 }
 
 .wish-arrow {
-	width: 90px;
-	height: 20px;
-	background-color: #FFE5D9;
+	width: 70px;
+	height: 150px;
+	background-color: #fff;
 	margin: auto;
 	margin-bottom: 30px;
 	position: relative;
@@ -30,11 +36,11 @@
 	width: 0;
 	height: 0;
 	border-style: solid;
-	border-width: 30px 55px 0;
-	border-color: #FFE5D9 transparent;
+	border-width: 38px 50px 0;
+	border-color: #fff transparent;
 	position: absolute;
-	top: 20px;
-	left: -10px;
+	left: -15px;
+	bottom: -30px;
 }
 
 .wheel {
@@ -77,7 +83,7 @@
 	position: absolute;
 	top: 18px;
 	left: 11px;
-	color: white;
+	color: #ebf1f1;
 }
 
 .wish-section {
@@ -89,41 +95,41 @@
 	border-style: solid;
 	border-width: 200px 116px 0;
 	left: 84px;
-	top: 0px;
+	top: 0;
 	opacity: 1;
 	-webkit-transform-origin: 116px 200px;
 	transform-origin: 116px 200px;
-	border-color: #5a6b65 transparent;
+	border-color: #019bdd transparent;
 }
 
 .wish-section:nth-child(2) {
 	-webkit-transform: rotate(60deg);
 	transform: rotate(60deg);
-	border-color: #c9b7b0 transparent;
+	border-color: #ebf1f1 transparent;
 }
 
 .wish-section:nth-child(3) {
 	-webkit-transform: rotate(120deg);
 	transform: rotate(120deg);
-	border-color: #5a6b65 transparent;
+	border-color: #019bdd transparent;
 }
 
 .wish-section:nth-child(4) {
 	-webkit-transform: rotate(180deg);
 	transform: rotate(180deg);
-	border-color: #d5a5a0 transparent;
+	border-color: #ebf1f1 transparent;
 }
 
 .wish-section:nth-child(5) {
 	-webkit-transform: rotate(240deg);
 	transform: rotate(240deg);
-	border-color: #c9b1b2 transparent;
+	border-color: #019bdd transparent;
 }
 
 .wish-section:nth-child(6) {
 	-webkit-transform: rotate(300deg);
 	transform: rotate(300deg);
-	border-color: #BD9391 transparent;
+	border-color: #ebf1f1 transparent;
 }
 
 .wish-section span {
@@ -198,12 +204,12 @@
 }
 
 .wish-container .fa-heart {
-	color: #d5a5a0;
+	color: #ff9489;
 	cursor: pointer;
 }
 
 .wish-container .fa-birthday-cake {
-	color: #5a6b65;
+	color: #2f4a5e;
 }
 
 .wish-container .lots {
